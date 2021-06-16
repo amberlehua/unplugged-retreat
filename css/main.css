@@ -120,11 +120,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -159,6 +159,14 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   background: #3a3a3a;
   width: 100%;
@@ -172,6 +180,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  text-transform: uppercase;
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
@@ -186,13 +195,9 @@ header nav ul {
 
 
 /* -------- Mobile Styles - Footer -------- */
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
 footer{
+  text-align: center;
   flex-direction: column;
 }
 
@@ -202,7 +207,7 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0px;
+  margin: 50px 0;
 }
 
 footer .contact {
@@ -229,12 +234,19 @@ footer .copyright {
 /* -------- Mobile Styles - Homepage -------- */
 
 
+
 /* Hero Area */
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  min-height: 500px;
+  background-position: center;
+
 }
+
 
 .hero-area h1 {
   font-size: 2.25em;
@@ -284,6 +296,9 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url('../img/faded.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .features h2 {
@@ -460,6 +475,8 @@ input[type=button] {
    ========================================================================== */
 @media only screen and (min-width: 768px) {
   /* General styles */
+
+
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -490,6 +507,7 @@ input[type=button] {
     width: 30%;
   }
 
+
   header nav {
     width: 20%;
   }
@@ -504,6 +522,10 @@ input[type=button] {
   }
 
   /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -524,6 +546,10 @@ input[type=button] {
   }
 
   /* Features */
+
+  .features h2{
+    margin-bottom: 20px;
+  }
 
   .features article {
     flex-basis: 50%;
@@ -547,6 +573,7 @@ input[type=button] {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -639,6 +666,7 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
   header {
     padding: 15px 0;
   }
@@ -663,7 +691,7 @@ input[type=button] {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
   }
 
   /* Aside */
@@ -692,7 +720,7 @@ input[type=button] {
   /* Reviews */
 
   .reviews h2 {
-    flex-basis: 33%;
+    padding-bottom: 50px;
   }
 
   .reviews article div {
