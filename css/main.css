@@ -132,9 +132,9 @@ address {
 }
 
 .content-wrapper {
-     width: 90%;
-     margin: 50px 0;
-   }
+  width: 90%;
+  margin: 50px 0;
+}
 
 /* -------- Base Header - Footer Styles -------- */
 header,
@@ -174,7 +174,6 @@ header figure {
   margin: 10px 0 20px 0;
 }
 
-
 header nav {
   display: flex;
   justify-content: space-around;
@@ -196,11 +195,8 @@ header nav ul li {
   font-size: 1.125em;
 }
 
-
-
 /* -------- Mobile Styles - Footer -------- */
-
-footer{
+footer {
   text-align: center;
   flex-direction: column;
 }
@@ -225,20 +221,26 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  height: 40px;
+  width: 40px;
+  background-color: #527158;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
+}
+
+footer i {
+  font-size: 1.3125em;
+
 }
 
 footer .copyright {
   margin: 20px 0;
 }
 
-
 /* -------- Mobile Styles - Homepage -------- */
-
-
-
 /* Hero Area */
 .hero-area {
   display: flex;
@@ -248,9 +250,7 @@ footer .copyright {
   background-size: cover;
   min-height: 500px;
   background-position: center;
-
 }
-
 
 .hero-area h1 {
   font-size: 2.25em;
@@ -294,7 +294,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-
 /* Features */
 .features {
   display: flex;
@@ -319,7 +318,6 @@ input[type=button] {
   margin-bottom: 40px;
 }
 
-
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -338,6 +336,7 @@ input[type=button] {
   justify-content: center;
   flex-flow: row wrap;
 }
+
 .reviews h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -347,6 +346,7 @@ input[type=button] {
   width: 55%;
   margin: 20px 0;
 }
+
 /* -------- Mobile Styles - About -------- */
 .mission {
   background-color: #527158;
@@ -413,7 +413,6 @@ input[type=button] {
 .faq-content h4 {
   line-height: 1.333;
 }
-
 
 /* ==========================================================================
    Helper classes
@@ -491,17 +490,14 @@ input[type=button] {
   clear: both;
 }
 
-
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 768px) {
+
   /* General styles */
-
-
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -532,11 +528,9 @@ input[type=button] {
     width: 30%;
   }
 
-
   header nav {
     width: 20%;
   }
-
 
   header nav ul {
     justify-content: space-between;
@@ -556,6 +550,7 @@ input[type=button] {
     line-height: 1;
     margin: 0;
   }
+
   /* Aside */
   aside .content-wrapper {
     margin: 50px 0;
@@ -571,8 +566,7 @@ input[type=button] {
   }
 
   /* Features */
-
-  .features h2{
+  .features h2 {
     margin-bottom: 20px;
   }
 
@@ -637,68 +631,64 @@ input[type=button] {
   footer .copyright {
     width: 100%;
   }
-
 }
 
+/* About Page */
+.mission-contnt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
 
-  /* About Page */
+.mission-content p {
+  width: 45%;
+}
 
-  .mission-contnt {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
+.map figure {
+  padding-bottom: 95%;
+}
 
-  .mission-content p {
-    width: 45%;
-  }
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
 
-  .map figure {
-    padding-bottom: 95%;
-  }
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-  .contact-section .content-wrapper h2 {
-    width: 80%;
-  }
+.contact-content h4 {
+  font-size: 1.5em;
+}
 
-  .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+/* FAQ Page */
+.faq .content-wrapper {
+  justify-content: space-between;
+}
 
-  .contact-content h4 {
-    font-size: 1.5em;
-  }
+.faq-content {
+  flex-basis: 45%;
+}
 
-  /* FAQ Page */
+.faq h2 {
+  width: 100%;
+}
 
-  .faq .content-wrapper {
-    justify-content: space-between;
-  }
-
-  .faq-content {
-    flex-basis: 45%;
-  }
-
-  .faq h2 {
-    width: 100%;
-  }
-
-  .faq h4,
-  .faq p {
-    font-size: .875em;
-    line-height: 1.125;
-  }
-
+.faq h4,
+.faq p {
+  font-size: .875em;
+  line-height: 1.125;
+}
 
 @media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
 
+  /* Desktop styles here */
   header {
     padding: 15px 0;
   }
+
   .content-wrapper {
     max-width: 960px;
   }
@@ -747,7 +737,6 @@ input[type=button] {
   }
 
   /* Reviews */
-
   .reviews h2 {
     padding-bottom: 50px;
   }
