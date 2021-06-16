@@ -192,6 +192,10 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 
 
 /* -------- Mobile Styles - Footer -------- */
@@ -514,9 +518,9 @@ input[type=button] {
     padding: 33px 0;
   }
 
-  header content-wrapper {
+  header .content-wrapper {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   header figure {
@@ -645,6 +649,10 @@ input[type=button] {
     width: 45%;
   }
 
+  .map figure {
+    padding-bottom: 95%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -751,6 +759,10 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+  }
+
+  .map figure {
+    padding-bottom: 25%;
   }
 
   .contact-content h4 {
