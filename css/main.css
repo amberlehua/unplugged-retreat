@@ -231,7 +231,6 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
 }
 
 footer i {
@@ -615,6 +614,10 @@ input[type=button] {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+  }
+
+  footer .social-icons p {
+    margin: 20px;
   }
 
   footer .contact {
